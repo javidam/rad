@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3B187515-87B8-425E-B1D1-3190921569C3}</ProjectGuid>
+    <ProjectGuid>{8D19D877-A1B1-4AAF-B1CB-5B8F1CD430F6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>PGtkArticulo</RootNamespace>
     <AssemblyName>PGtkArticulo</AssemblyName>
@@ -57,6 +57,10 @@
       <Package>gtk-sharp-2.0</Package>
     </Reference>
     <Reference Include="Mono.Posix" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\usr\lib\mono\gac\MySql.Data\6.4.3.0__20449f9ba87f7ae2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
@@ -66,9 +70,10 @@
   <ItemGroup>
     <Compile Include="gtk-gui\generated.cs" />
     <Compile Include="MainWindow.cs" />
+    <Compile Include="gtk-gui\MainWindow.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="gtk-gui\Ad.Serpis.MainWindow.cs" />
+    <Compile Include="TreeViewFiller.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

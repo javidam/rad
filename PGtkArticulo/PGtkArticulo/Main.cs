@@ -1,5 +1,4 @@
 using System;
-
 using Gtk;
 
 namespace PGtkArticulo
@@ -9,8 +8,8 @@ namespace PGtkArticulo
 		public static void Main (string[] args)
 		{
 			Application.Init ();
-			MainWindow window = new MainWindow ();
-			window.Show ();
+			MainWindow win = new MainWindow ();
+			win.Show ();
 			Application.Run ();
 		}
 	}
